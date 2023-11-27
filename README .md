@@ -4,25 +4,31 @@
 
 • Use jupyter notebook to confirm the database is loaded properly (it exists with the proper collects and documents)
 
-• Make the following updates prior to completing analysis
+* Make the following updates prior to completing analysis
 
-    o Add the new halal restaurant, "Penang Flavours", that just opened in Greenwich with the BusinessTypeID for "Restaurant/Cafe/Canteen"
-    o Remove all establishments in Dover Local Authority
-    o Convert latitude and longitude to decimal numbers
-    o Conver RatingValue to integer numbers
+   * Add the new halal restaurant, "Penang Flavours", that just opened in Greenwich with the BusinessTypeID for "Restaurant/Cafe/Canteen"
+  
+   * Remove all establishments in Dover Local Authority
+  
+   * Convert latitude and longitude to decimal numbers
+  
+   * Conver RatingValue to integer numbers
 
-• Complete the following analysis
-
-    o Determine which establishments have a hygiene score equal to 20
-    o Determine which establishments in London have a RatingValue greater than or equal to 4
-    o Determine the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"
-    o Determine e how many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest.
+* Complete the following analysis
+  
+    * Determine which establishments have a hygiene score equal to 20
+   
+    * Determine which establishments in London have a RatingValue greater than or equal to 4
+      
+    * Determine the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"
+      
+    * Determine e how many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest.
 
 ## Notes
 
-• Resources folder contains the data that must be loaded prior to executing any of provided code
+* Resources folder contains the data that must be loaded prior to executing any of provided code
 
-    o establishments.json contains the data provided for this challenge. Use the following command in terminal to import the data:
+   * establishments.json contains the data provided for this challenge. Use the following command in terminal to import the data:
 
     mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json
 
